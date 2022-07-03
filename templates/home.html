@@ -28,13 +28,13 @@
        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla. Aliquet risus feugiat in ante metus. Nulla at volutpat diam ut. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat.
      </p>
      
-     <h2 style="color:rgb(266,120,55)"class="text-center mt-2 mb-4">Region-wise Recipes</h2> 
+     <h2 style="color:rgb(255,123,336)"class="text-center mt-2 mb-4">Region-wise Recipes</h2> 
      <div style="margin-bottom:16px";>
-     <h2 style="color:rgb(255,0,0);margin-bottom:4px;">Telangana</h2>
+     <h2 style="color:rgb(255,80,336);margin-bottom:4px;">Telangana</h2>
      <div>
        {%for recipe in recipes%}
        <div style="margin-bottom:16px";>
-       <h4 style="color:rgb(25,233,10)">{{recipe['dish']}}</h4>
+       <h4 style="color:rgb(255,123,336)">{{recipe['dish']}}</h4>
        <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
        <div><b>Total Members: </b>{{recipe['members']}}</div>
        
@@ -43,13 +43,13 @@
      <h2 style="color:rgb(255,0,0)">Rayalseema</h2>
      <div>
        {%for recipe in recipes%}
-       <h4 style="color:rgb(25,233,10)"">{{recipe['dish']}}</h4>
+       <h4 style="color:rgb(255,12,10)"">{{recipe['dish']}}</h4>
        <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
        <div><b>Total Members: </b>{{recipe['members']}}</div>
        {% endfor %}
        <div style="margin-bottom:16px";>
      </div>
-     <h2 style="color:rgb(255,0,0)">Andhra</h2>
+     <h2 style="color:rgb(0,125,20)">Andhra</h2>
      <div>
        {% for recipe in recipes %}
        <h4 style="color:rgb(25,233,10)">{{recipe['dish']}}</h4>
@@ -57,11 +57,11 @@
        <div><b>Total Members: </b>{{recipe['members']}}</div>
        {% endfor %}
      <div style="margin-bottom:16px";>
-     <h2 style="color:rgb(255,0,0);margin-bottom:4px;">Orissa</h2>
+     <h2 style="color:rgb(120,50,100);margin-bottom:4px;">Orissa</h2>
      <div>
        {%for state in states%}
        <div style="margin-bottom:16px";>
-       <h4 style="color:rgb(25,233,10)">{{state['dish']}}</h4>
+       <h4 style="color:rgb(80,50,100)">{{state['dish']}}</h4>
        <div><b>Total Members: </b>{{state['members']}}</div>
        
        {% endfor %}
