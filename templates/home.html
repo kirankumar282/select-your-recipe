@@ -33,17 +33,17 @@
      <h2 style="color:rgb(255,80,336);margin-bottom:4px;">Telangana</h2>
      <div>
        {%for recipe in recipes%}
-       <div style="margin-bottom:16px";>
+       <div class="border-bottom"style="margin-bottom:16px;padding-bottom:8px;">
        <h4 style="color:rgb(255,123,336)">{{recipe['dish']}}</h4>
        <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
-       <div><b>Total Members: </b>{{recipe['members']}}</div>
-       
+       <div><b>Total Members: </b>{{recipe['members']}}</div> 
        {% endfor %}
      </div>
      <h2 style="color:rgb(255,0,0)">Rayalseema</h2>
      <div>
        {%for recipe in recipes%}
-       <h4 style="color:rgb(255,12,10)"">{{recipe['dish']}}</h4>
+       <div style="margin-bottom:16px";>
+       <h4 style="color:rgb(255,12,10)">{{recipe['dish']}}</h4>
        <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
        <div><b>Total Members: </b>{{recipe['members']}}</div>
        {% endfor %}
@@ -52,6 +52,7 @@
      <h2 style="color:rgb(0,125,20)">Andhra</h2>
      <div>
        {% for recipe in recipes %}
+       <div style="margin-bottom:16px";>
        <h4 style="color:rgb(25,233,10)">{{recipe['dish']}}</h4>
        <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
        <div><b>Total Members: </b>{{recipe['members']}}</div>
@@ -59,13 +60,16 @@
      <div style="margin-bottom:16px";>
      <h2 style="color:rgb(120,50,100);margin-bottom:4px;">Orissa</h2>
      <div>
-       {%for state in states%}
+       {%for state in states%}  
        <div style="margin-bottom:16px";>
        <h4 style="color:rgb(80,50,100)">{{state['dish']}}</h4>
        <div><b>Total Members: </b>{{state['members']}}</div>
        
        {% endfor %}
      </div>
+       <div class="col-3">  
+       </div>
+       <button class="btn btn-outline-primary">Add to Cart</button>
      <div class="text-center">
      <button class="btn btn-primary btn-lg">Contact Us</button>
        <p class="text-center mt-2 mb-4">Copyright 2022, Paleo</p>
