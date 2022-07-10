@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Paleo</title>
+    <title>soMad!</title>
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -13,66 +13,35 @@
       }
     </style>
   </head>
-  <body>
+  <body> 
     <div class="container">
-      <h1 class="text-center mt-2 mb-2">Paleo</h1>  
+      <h1 class=>soMad!</h1>
+      <div class=""shadow-none p-3 mb-5 bg-light rounded"">Select Your Favourites</div>
+      <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Log in</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sign Up</a>
+  </li>
+</ul>
   </body>
    <body>
-      <h2 class= "text-center" >Select Your Favourite Recipes and Get Delivered at your Door Steps in Hyderabad
-      </h2> 
-     <img class="rounded mx-auto d-block" id="banner" src= "https://select-your-recipe.kirankumar282.repl.co/static/paleo.jpeg" >
+     <img class="rounded mx-auto d-block" id="banner" src= "https://select-your-recipe.kirankumar282.repl.co/static/sunrise.jpeg" >
      <h2 class="text-center">
-       About Paleo
+       About soMad!
      </h2>
      <p class="lead" >
        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla. Aliquet risus feugiat in ante metus. Nulla at volutpat diam ut. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat.
      </p>
-     
-     <h2 style="color:rgb(255,123,336)"class="text-center mt-2 mb-4">Region-wise Recipes</h2> 
-     <div style="margin-bottom:16px";>
-     <h2 style="color:rgb(255,80,336);margin-bottom:4px;">Telangana</h2>
-     <div>
-       {%for recipe in recipes%}
-       <div class="border-bottom"style="margin-bottom:16px;padding-bottom:8px;">
-       <h4 style="color:rgb(255,123,336)">{{recipe['dish']}}</h4>
-       <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
-       <div><b>Total Members: </b>{{recipe['members']}}</div> 
-       {% endfor %}
-     </div>
-     <h2 style="color:rgb(255,0,0)">Rayalseema</h2>
-     <div>
-       {%for recipe in recipes%}
-       <div style="margin-bottom:16px";>
-       <h4 style="color:rgb(255,12,10)">{{recipe['dish']}}</h4>
-       <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
-       <div><b>Total Members: </b>{{recipe['members']}}</div>
-       {% endfor %}
-       <div style="margin-bottom:16px";>
-     </div>
-     <h2 style="color:rgb(0,125,20)">Andhra</h2>
-     <div>
-       {% for recipe in recipes %}
-       <div style="margin-bottom:16px";>
-       <h4 style="color:rgb(25,233,10)">{{recipe['dish']}}</h4>
-       <div><b>Spice-Level: </b>{{recipe['spicy-level']}}</div>
-       <div><b>Total Members: </b>{{recipe['members']}}</div>
-       {% endfor %}
-     <div style="margin-bottom:16px";>
-     <h2 style="color:rgb(120,50,100);margin-bottom:4px;">Orissa</h2>
-     <div>
-       {%for state in states%}  
-       <div style="margin-bottom:16px";>
-       <h4 style="color:rgb(80,50,100)">{{state['dish']}}</h4>
-       <div><b>Total Members: </b>{{state['members']}}</div>
-       
-       {% endfor %}
-     </div>
-       <div class="col-3">  
-       </div>
-       <button class="btn btn-outline-primary">Add to Cart</button>
-     <div class="text-center">
      <button class="btn btn-primary btn-lg">Contact Us</button>
-       <p class="text-center mt-2 mb-4">Copyright 2022, Paleo</p>
+       <p class="text-center mt-2 mb-4">Copyright 2022, soMad!</p>
      </div>
   </body>
 </html>
